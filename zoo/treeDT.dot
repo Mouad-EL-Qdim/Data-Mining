@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="milk <= 0.5\ngini = 0.778\nsamples = 80\nvalue = [29, 18, 4, 11, 4, 5, 9]\nclass = 1"] ;
+1 [label="feathers <= 0.5\ngini = 0.776\nsamples = 51\nvalue = [0, 18, 4, 11, 4, 5, 9]\nclass = 2"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="fins <= 0.5\ngini = 0.762\nsamples = 33\nvalue = [0, 0, 4, 11, 4, 5, 9]\nclass = 4"] ;
+1 -> 2 ;
+3 [label="backbone <= 0.5\ngini = 0.715\nsamples = 22\nvalue = [0, 0, 4, 0, 4, 5, 9]\nclass = 7"] ;
+2 -> 3 ;
+4 [label="airborne <= 0.5\ngini = 0.459\nsamples = 14\nvalue = [0, 0, 0, 0, 0, 5, 9]\nclass = 7"] ;
+3 -> 4 ;
+5 [label="animal_name_termite <= 0.5\ngini = 0.298\nsamples = 11\nvalue = [0, 0, 0, 0, 0, 2, 9]\nclass = 7"] ;
+4 -> 5 ;
+6 [label="animal_name_flea <= 0.5\ngini = 0.18\nsamples = 10\nvalue = [0, 0, 0, 0, 0, 1, 9]\nclass = 7"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 9\nvalue = [0, 0, 0, 0, 0, 0, 9]\nclass = 7"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = 6"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = 6"] ;
+5 -> 9 ;
+10 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 0, 0, 0, 3, 0]\nclass = 6"] ;
+4 -> 10 ;
+11 [label="aquatic <= 0.5\ngini = 0.5\nsamples = 8\nvalue = [0, 0, 4, 0, 4, 0, 0]\nclass = 3"] ;
+3 -> 11 ;
+12 [label="gini = 0.0\nsamples = 4\nvalue = [0, 0, 4, 0, 0, 0, 0]\nclass = 3"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 4\nvalue = [0, 0, 0, 0, 4, 0, 0]\nclass = 5"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 11\nvalue = [0, 0, 0, 11, 0, 0, 0]\nclass = 4"] ;
+2 -> 14 ;
+15 [label="gini = 0.0\nsamples = 18\nvalue = [0, 18, 0, 0, 0, 0, 0]\nclass = 2"] ;
+1 -> 15 ;
+16 [label="gini = 0.0\nsamples = 29\nvalue = [29, 0, 0, 0, 0, 0, 0]\nclass = 1"] ;
+0 -> 16 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
